@@ -1,0 +1,96 @@
+affine_trainable: false
+auto_save: true
+base_fun_name: silu
+ckpt_path: ./KAN_files/encoder_kan_with_exp_5
+device: cuda
+grid: 8
+grid_eps: 0.02
+grid_range:
+- -1
+- 1
+k: 5
+mult_arity: 2
+round: 0
+sb_trainable: true
+sp_trainable: true
+state_id: 14
+symbolic.funs_name.0:
+- - '0'
+  - exp
+  - exp
+  - '0'
+  - x
+  - x
+  - '0'
+  - x
+  - x
+- - '0'
+  - '0'
+  - x
+  - '0'
+  - x
+  - x
+  - '0'
+  - x
+  - x
+- - '0'
+  - exp
+  - exp
+  - '0'
+  - x
+  - x
+  - '0'
+  - x
+  - x
+- - '0'
+  - '0'
+  - x
+  - '0'
+  - x
+  - x
+  - '0'
+  - x
+  - x
+- - '0'
+  - '0'
+  - x
+  - '0'
+  - x
+  - x
+  - '0'
+  - x
+  - x
+symbolic.funs_name.1:
+- - cos
+  - cos
+  - sin
+  - '0'
+  - 1/x
+- - sin
+  - cos
+  - cos
+  - '0'
+  - sin
+- - tan
+  - cos
+  - cos
+  - '0'
+  - '0'
+- - x^2
+  - 1/x
+  - sin
+  - sin
+  - x
+- - '0'
+  - cos
+  - x^2
+  - '0'
+  - sin
+symbolic_enabled: true
+width:
+- - 9
+  - 0
+- - 5
+  - 0
+- - 5
+  - 0
