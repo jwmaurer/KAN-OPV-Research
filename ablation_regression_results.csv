@@ -1,0 +1,6 @@
+Basis,MAE,RMSE,R^2
+Radial,1.810,2.149,0.015
+Wavelet,1.822,2.166,-4.005e-5
+Cheby,1.821,2.167,-0.002
+B-Spline (sym),0.441,0.834,0.852
+B-Spline (unsym),0.368,0.694,0.897
